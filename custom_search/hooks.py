@@ -256,3 +256,6 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+override_whitelisted_methods = {
+    "erpnext.controllers.queries.item_query": "custom_search.queries.tokenized_item_query"
+}
